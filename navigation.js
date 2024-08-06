@@ -4,16 +4,14 @@ const Stack = createNativeStackNavigator();
 import { view, text } from "react-native";
 import React from "react";
 import HomeScreen from "./screens/HomeScreen";
-import Restaurant from "./screens/Restaurant";
+import RestaurantScreen from "./screens/RestaurantScreen";
 
 export default function Navigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={
-        { headerShown: false }
-      }>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Restaurant" component={Restaurant} />
+        <Stack.Screen name="Restaurant" component={RestaurantScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
